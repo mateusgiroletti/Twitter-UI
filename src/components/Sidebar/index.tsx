@@ -1,4 +1,5 @@
 import { House, Hash, Bell, Envelope, BookmarkSimple, FileText, User, DotsThreeCircle } from "phosphor-react";
+import { NavLink } from "react-router-dom";
 
 import logo from "../../assets/logo.svg";
 import "./index.css";
@@ -9,10 +10,10 @@ export function Sidebar() {
             <img className="logo" src={logo} alt="Logo" />
 
             <nav className="main-navigation">
-                <a href="" className="active">
+                <NavLink to="/" >
                     <House weight="fill" />
                     Home
-                </a>
+                </NavLink>
                 <a href="">
                     <Hash />
                     Explore
